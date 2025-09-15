@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+/* 全局样式 */
+body {
+  margin: 0;
+  padding: 0;
+  background: #0f0f0f;
+}
+
+#root {
+  min-height: 100vh;
+}
