@@ -1,69 +1,38 @@
-# React + TypeScript + Vite
+<div align="center">
+  <h1>🔄 JSON → TypeScript 工具</h1>
+  <p>一个可以智能格式化 JSON 并转换为 TypeScript 类型定义的小工具</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  🔗 <a href="https://qihang-s.github.io/json-to-ts/" target="_blank">立即体验</a>
+</div>
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 在线预览
 
-## Expanding the ESLint configuration
+![预览截图](https://qihang-s.github.io/json-to-ts/screenshot.png)  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✨ 功能特性
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- 🧹 自动修复不合法的 JSON（缺少引号、换行、空格问题等）
+- 🔄 一键转换为 TypeScript 类型定义
+- ⚡ Vite + React 构建，快速响应
+- 🌍 在线可用，无需安装
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 使用方法
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. 打开 👉 [在线工具](https://qihang-s.github.io/json-to-ts/)  
+2. 在左侧输入 JSON 数据（即使格式不规范也能智能处理）  
+3. 点击 **转换**  
+4. 在右侧获取对应的 TypeScript 类型定义  
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+
+
+<div align="center">
+  Made with ❤️ by <a href="https://github.com/qihang-s">qihang-s</a>
+</div>
